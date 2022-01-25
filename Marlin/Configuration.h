@@ -863,7 +863,7 @@
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 4
-#define Y_MIN_POS 7
+#define Y_MIN_POS 25
 #define Z_MIN_POS 0
 #define X_MAX_POS (X_BED_SIZE + X_MIN_POS) + 15 // Extended max to allow the probe to reach more of the bed.
 #define Y_MAX_POS (Y_BED_SIZE + Y_MIN_POS)
@@ -1001,7 +1001,7 @@
  * Turn on with the command 'M111 S32'.
  * NOTE: Requires a lot of PROGMEM!
  */
-#define DEBUG_LEVELING_FEATURE
+//#define DEBUG_LEVELING_FEATURE
 
 #if ANY(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL, PROBE_MANUALLY)
   // Set a height for the start of manual adjustment
