@@ -34,9 +34,7 @@
  */
 #define CONFIGURATION_ADV_H_VERSION 02000903
 
-//===========================================================================
 //============================= Thermal Settings ============================
-//===========================================================================
 // @section temperature
 
 /**
@@ -1249,9 +1247,9 @@
   //#define DIGIPOT_I2C_ADDRESS_B 0x2D  // Unshifted slave address for second DIGIPOT
 #endif
 
-//===========================================================================
+
 //=============================Additional Features===========================
-//===========================================================================
+
 
 // @section lcd
 
@@ -1384,7 +1382,7 @@
 
 // LCD Print Progress options
 #if EITHER(SDSUPPORT, LCD_SET_PROGRESS_MANUALLY)
-  #if CAN_SHOW_REMAINING_TIME
+  #if CAN_SHOW_REMAINING_TIMEgit 
     // TODO: Do I want this?
     //#define SHOW_REMAINING_TIME         // Display estimated time to completion
     #if ENABLED(SHOW_REMAINING_TIME)
@@ -2242,9 +2240,9 @@
 // Control heater 0 and heater 1 in parallel.
 //#define HEATERS_PARALLEL
 
-//===========================================================================
+
 //================================= Buffers =================================
-//===========================================================================
+
 
 // @section motion
 
