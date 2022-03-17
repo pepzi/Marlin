@@ -22,7 +22,6 @@
 #pragma once
 
 #define CONFIG_EXAMPLES_DIR "Creality/Ender-3 Pro/CrealityV422"
-
 /**
  * Configuration_adv.h
  *
@@ -34,7 +33,9 @@
  */
 #define CONFIGURATION_ADV_H_VERSION 02000903
 
+//===========================================================================
 //============================= Thermal Settings ============================
+//===========================================================================
 // @section temperature
 
 /**
@@ -1247,9 +1248,9 @@
   //#define DIGIPOT_I2C_ADDRESS_B 0x2D  // Unshifted slave address for second DIGIPOT
 #endif
 
-
+//===========================================================================
 //=============================Additional Features===========================
-
+//===========================================================================
 
 // @section lcd
 
@@ -1368,7 +1369,7 @@
   #endif
 
   // Scroll a longer status message into view
-  #define STATUS_MESSAGE_SCROLLING
+  //#define STATUS_MESSAGE_SCROLLING
 
   // On the Info Screen, display XY with one decimal place when possible
   //#define LCD_DECIMAL_SMALL_XY
@@ -2239,9 +2240,9 @@
 // Control heater 0 and heater 1 in parallel.
 //#define HEATERS_PARALLEL
 
-
+//===========================================================================
 //================================= Buffers =================================
-
+//===========================================================================
 
 // @section motion
 
@@ -2977,6 +2978,9 @@
   //#define CHOPPER_TIMING_Z2 CHOPPER_TIMING_Z
   //#define CHOPPER_TIMING_Z3 CHOPPER_TIMING_Z
   //#define CHOPPER_TIMING_Z4 CHOPPER_TIMING_Z
+  //#define CHOPPER_TIMING_I  CHOPPER_TIMING
+  //#define CHOPPER_TIMING_J  CHOPPER_TIMING
+  //#define CHOPPER_TIMING_K  CHOPPER_TIMING
   //#define CHOPPER_TIMING_E  CHOPPER_TIMING        // For Extruders (override below)
   //#define CHOPPER_TIMING_E1 CHOPPER_TIMING_E
   //#define CHOPPER_TIMING_E2 CHOPPER_TIMING_E
